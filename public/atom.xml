@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Mark Purser]]></title>
+  <link href="http://markpurser.co.uk/atom.xml" rel="self"/>
+  <link href="http://markpurser.co.uk/"/>
+  <updated>2016-11-03T13:04:36+00:00</updated>
+  <id>http://markpurser.co.uk/</id>
+  <author>
+    <name><![CDATA[Mark Purser]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

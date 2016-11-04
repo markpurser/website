@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /old/
+Disallow: /old2/
+Disallow: /GSEA_Presentation/
+
+Sitemap: http://markpurser.co.uk/sitemap.xml 

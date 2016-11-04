@@ -1,0 +1,9 @@
+---
+layout: null
+---
+User-agent: *
+Disallow: /old/
+Disallow: /old2/
+Disallow: /GSEA_Presentation/
+
+Sitemap: {{ site.url }}/sitemap.xml 
