@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://markpurser.co.uk/blog/2017/01/03/haskell-christmas/</loc>
+<lastmod>2017-01-03T12:05:35+00:00</lastmod>
+</url>
+<url>
 <loc>http://markpurser.co.uk/blog/</loc>
 </url>
 <url>
@@ -20,5 +24,11 @@
 </url>
 <url>
 <loc>http://markpurser.co.uk/software-engineering/</loc>
+</url>
+<url>
+<loc>http://markpurser.co.uk/blog/categories/functional-programming/</loc>
+</url>
+<url>
+<loc>http://markpurser.co.uk/blog/categories/haskell/</loc>
 </url>
 </urlset>

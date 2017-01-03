@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Haskell | Mark Purser]]></title>
+  <link href="http://markpurser.co.uk/blog/categories/haskell/atom.xml" rel="self"/>
+  <link href="http://markpurser.co.uk/"/>
+  <updated>2017-01-03T15:44:35+00:00</updated>
+  <id>http://markpurser.co.uk/</id>
+  <author>
+    <name><![CDATA[Mark Purser]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Haskell Christmas Everybody]]></title>
+    <link href="http://markpurser.co.uk/blog/2017/01/03/haskell-christmas/"/>
+    <updated>2017-01-03T12:05:35+00:00</updated>
+    <id>http://markpurser.co.uk/blog/2017/01/03/haskell-christmas</id>
+    <content type="html"><![CDATA[<p>Here is my solution to one of the exercises set by our Haskell reading group: Draw a Christmas tree to the console, given the height of the tree as input. It demonstrates some of the Input and Output of Chapter 9 of <a href="http://learnyouahaskell.com">Learn You A Haskell For Great Good</a>. Thanks to <a href="https://www.meetup.com/Functional-Brighton">Functional Brighton</a> for all the great meet-ups this year</p>
+
+<!-- more -->
+
+
+<p>In terms of tree decoration we are going for a minimalist approach:</p>
+
+<pre><code>runhaskell xmas 4
+
+    *
+   ***
+  *****
+ *******
+    |
+</code></pre>
+
+<p>To model the tree, we draw from two sets of integers of equal length. The first being the number of spaces preceding each row - simply starting at height-1 and decrementing to 0 (the last row of the tree, discounting the trunk)</p>
+
+<pre><code class="haskell">nspaces :: Int -&gt; [Int]
+nspaces a = reverse $ take a [0..]
+</code></pre>
+
+<p>The second set of integers represent the stars that make up the actual tree. The set consists of the odd numbers starting from 1. These are generated using a list comprehension:</p>
+
+<pre><code class="haskell">nstars :: Int -&gt; [Int]
+nstars a = take a [x | x &lt;- [1..], odd x]
+</code></pre>
+
+<p>Now we simply zip these two sets together into a list of tuples:</p>
+
+<pre><code class="haskell">let treemodel = zip (nspaces height) (nstars height)
+</code></pre>
+
+<p>And run them through a stringifyer, converting each tuple to a number of space characters followed by a number of stars characters:</p>
+
+<pre><code class="haskell">stringifytreerow :: (Int, Int) -&gt; [Char]
+stringifytreerow (nspaces, nstars) = (take nspaces $ repeat ' ') ++ (take nstars $ repeat '*')
+</code></pre>
+
+<p>And now to the whole point of the IO chapter! To display something&hellip; it&rsquo;s simple using mapM_ which maps putStrLn over all tree strings, and sequences the resulting IO actions. We also display the tree trunk at the same time:</p>
+
+<pre><code class="haskell">mapM_ putStrLn $ treestrings
+putStrLn trunkstring
+</code></pre>
+
+<h2>Limitations</h2>
+
+<p>The program does not check for invalid input, such as height 0</p>
+
+<h2>Full listing</h2>
+
+<p><div><script src='https://gist.github.com/18ef346fcbd509e4b3ed4342048a9bb6.js?file=xmas.hs'></script>
+<noscript><pre><code>import System.Environment
+import Data.List
+
+
+-- compute spaces running alongside the left of the tree
+nspaces :: Int -&gt; [Int]
+nspaces a = reverse $ take a [0..]
+
+-- compute stars making up the tree
+nstars :: Int -&gt; [Int]
+nstars a = take a [x | x &lt;- [1..], odd x]
+
+-- convert tuple containing number of spaces and number of stars to a string
+stringifytreerow :: (Int, Int) -&gt; [Char]
+stringifytreerow (nspaces, nstars) = (take nspaces $ repeat ' ') ++ (take nstars $ repeat '*')
+
+
+main = do
+	-- get single integer argument representing the height of the Christmas tree
+	(heightstring:args) &lt;- getArgs
+	let height = read heightstring :: Int
+
+	-- use the height to generate a model of the tree consisting of tuples of number of
+	-- spaces and number of stars for each row
+	let treemodel = zip (nspaces height) (nstars height)
+	let treestrings = map stringifytreerow treemodel
+
+	-- align the trunk of the tree with the top (head) of the tree
+	let trunkstring = (take (head $ nspaces height) $ repeat ' ') ++ &quot;|&quot;
+
+	-- display the tree
+	mapM_ putStrLn $ treestrings
+	putStrLn trunkstring
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
