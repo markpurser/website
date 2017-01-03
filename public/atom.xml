@@ -4,7 +4,7 @@
   <title><![CDATA[Mark Purser]]></title>
   <link href="http://markpurser.co.uk/atom.xml" rel="self"/>
   <link href="http://markpurser.co.uk/"/>
-  <updated>2017-01-03T15:44:35+00:00</updated>
+  <updated>2017-01-03T16:11:13+00:00</updated>
   <id>http://markpurser.co.uk/</id>
   <author>
     <name><![CDATA[Mark Purser]]></name>
@@ -41,7 +41,7 @@
 </span><span class='line'>    |</span></code></pre></td></tr></table></div></figure>
 
 
-<p>To model the tree, we draw from two sets of integers of equal length. The first being the number of spaces preceding each row - simply starting at height-1 and decrementing to 0 (the last row of the tree, discounting the trunk)</p>
+<p>To model the tree, we draw from two sets of integers. The first being the number of spaces preceding each row - simply starting at height-1 and decrementing to 0 (the last row of the tree, discounting the trunk)</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

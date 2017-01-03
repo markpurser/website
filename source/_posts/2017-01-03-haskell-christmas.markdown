@@ -24,7 +24,7 @@ runhaskell xmas 4
     |
 ```
 
-To model the tree, we draw from two sets of integers of equal length. The first being the number of spaces preceding each row - simply starting at height-1 and decrementing to 0 (the last row of the tree, discounting the trunk)
+To model the tree, we draw from two sets of integers. The first being the number of spaces preceding each row - simply starting at height-1 and decrementing to 0 (the last row of the tree, discounting the trunk)
 
 ``` haskell
 nspaces :: Int -> [Int]

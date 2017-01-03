@@ -8,7 +8,9 @@ footer: true
 
 <h3>GSEA</h3>
 
-An enterprise web application for a global organisation, the product comprises a subscription-based webstore and a back office administration interface. Tailored to the client's exacting requirements, the system includes redeem codes and customer management of virtual services. Third party integrations are with LDAP, Braintree and IceWarp.
+An enterprise web application for a global organisation, the product comprises a subscription-based webstore and a back office administration system. Tailored to the client's exacting requirements, the system includes redeem codes and management of virtual services. Custom integrations are with LDAP, Braintree and IceWarp.
+
+The page designs and CSS coding was provided by [Tim Rackham](http://timrackham.co.uk).
 
 {% img /images/gsea/landing_page_thumb.png Landing Page%}
 <br>
