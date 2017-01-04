@@ -4,7 +4,7 @@
   <title><![CDATA[Mark Purser]]></title>
   <link href="http://markpurser.co.uk/atom.xml" rel="self"/>
   <link href="http://markpurser.co.uk/"/>
-  <updated>2017-01-03T16:11:13+00:00</updated>
+  <updated>2017-01-04T10:23:49+00:00</updated>
   <id>http://markpurser.co.uk/</id>
   <author>
     <name><![CDATA[Mark Purser]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Haskell Christmas Everybody]]></title>
+    <title type="html"><![CDATA[A Haskell Christmas]]></title>
     <link href="http://markpurser.co.uk/blog/2017/01/03/haskell-christmas/"/>
     <updated>2017-01-03T12:05:35+00:00</updated>
     <id>http://markpurser.co.uk/blog/2017/01/03/haskell-christmas</id>
-    <content type="html"><![CDATA[<p>Here is my solution to one of the exercises set by our Haskell reading group: Draw a Christmas tree to the console, given the height of the tree as input. It demonstrates some of the Input and Output of Chapter 9 of <a href="http://learnyouahaskell.com">Learn You A Haskell For Great Good</a>. Thanks to <a href="https://www.meetup.com/Functional-Brighton">Functional Brighton</a> for all the great meet-ups this year</p>
+    <content type="html"><![CDATA[<p>Here is my solution to one of the exercises set by our Haskell reading group: Draw a Christmas tree to the console, given the height of the tree as input. It demonstrates some of the Input and Output of Chapter 9 of <a href="http://learnyouahaskell.com">Learn You A Haskell For Great Good</a>. Thanks to <a href="https://www.meetup.com/Functional-Brighton">Functional Brighton</a></p>
 
 <!-- more -->
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Haskell Christmas Everybody"
+title: "A Haskell Christmas"
 author: Mark Purser
 date: 2017-01-03 12:05:35 +0000
 comments: true
@@ -8,7 +8,7 @@ categories: [Functional Programming, Haskell]
 published: true
 ---
 
-Here is my solution to one of the exercises set by our Haskell reading group: Draw a Christmas tree to the console, given the height of the tree as input. It demonstrates some of the Input and Output of Chapter 9 of [Learn You A Haskell For Great Good](http://learnyouahaskell.com). Thanks to [Functional Brighton](https://www.meetup.com/Functional-Brighton) for all the great meet-ups this year
+Here is my solution to one of the exercises set by our Haskell reading group: Draw a Christmas tree to the console, given the height of the tree as input. It demonstrates some of the Input and Output of Chapter 9 of [Learn You A Haskell For Great Good](http://learnyouahaskell.com). Thanks to [Functional Brighton](https://www.meetup.com/Functional-Brighton)
 
 <!-- more -->
 
