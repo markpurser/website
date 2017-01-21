@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Clients"
+title: "Portfolio"
 comments: false
 sharing: true
 footer: true
@@ -8,17 +8,17 @@ footer: true
 
 <h3>GSEA</h3>
 
-An enterprise web application for a global organisation, the product comprises a subscription-based webstore and a back office administration system. Tailored to the client's exacting requirements, the system includes redeem codes and management of virtual services. Custom integrations are with LDAP, Braintree and IceWarp.
+A fast and responsive web application that helps this company provide IT tools and services primarily to the charity sector. The product comprises a subscription-based webstore and a back office administration system that streamlines and improves work flow.
 
-The page designs and CSS coding was provided by [Tim Rackham](http://timrackham.co.uk).
+Frameworks: Laravel, Angular
 
-{% img /images/gsea/landing_page_thumb.png Landing Page%}
+Integrates with: Braintree, LDAP, IceWarp
+
+Design and CSS: [Tim Rackham](http://timrackham.co.uk)
+
+[{% img center /images/gsea/landing_page_thumb.png 500 Landing Page%}](https://www.gseaonline.com)
 <br>
-{% img right /images/gsea/about_thumb.png About Page%}
-<br>
-{% img /images/gsea/shopping_basket_thumb.png Shopping Basket Page%}
-<br>
-{% img right /images/gsea/admin_panel_thumb.png Administration Panel%}
+{% img center /images/gsea/admin_panel_thumb.png 500 Administration Panel%}
 
 
 <h3>Previous Clients</h3>
