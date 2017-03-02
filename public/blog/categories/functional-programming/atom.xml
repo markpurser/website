@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Functional Programming | Mark Purser]]></title>
   <link href="http://markpurser.co.uk/blog/categories/functional-programming/atom.xml" rel="self"/>
   <link href="http://markpurser.co.uk/"/>
-  <updated>2017-01-21T08:32:09+00:00</updated>
+  <updated>2017-03-02T08:52:36+00:00</updated>
   <id>http://markpurser.co.uk/</id>
   <author>
     <name><![CDATA[Mark Purser]]></name>
@@ -84,7 +84,7 @@ nstars a = take a [x | x &lt;- [1..], odd x]
 
 -- convert tuple containing number of spaces and number of stars to a string
 stringifytreerow :: (Int, Int) -&gt; [Char]
-stringifytreerow (nspaces, nstars) = (take nspaces $ repeat ' ') ++ (take nstars $ repeat '*')
+stringifytreerow (nspaces, nstars) = (take nspaces $ repeat &#39; &#39;) ++ (take nstars $ repeat &#39;*&#39;)
 
 
 main = do
@@ -98,7 +98,7 @@ main = do
 	let treestrings = map stringifytreerow treemodel
 
 	-- align the trunk of the tree with the top (head) of the tree
-	let trunkstring = (take (head $ nspaces height) $ repeat ' ') ++ &quot;|&quot;
+	let trunkstring = (take (head $ nspaces height) $ repeat &#39; &#39;) ++ &quot;|&quot;
 
 	-- display the tree
 	mapM_ putStrLn $ treestrings

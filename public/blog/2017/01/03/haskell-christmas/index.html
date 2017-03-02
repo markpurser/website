@@ -50,9 +50,8 @@
 
 <body   class="collapse-sidebar sidebar-footer" >
   <header role="banner"><hgroup>
-  <h1><a href="/">Mark Purser</a></h1>
   
-    <h2>Web Developer - &#48;&#55;&#57;&#49;&#52; &#49;&#50;&#48;&#57;&#51;&#52;</h2>
+    <h2 align="left">Mark Purser</h2>
   
 </hgroup>
 
@@ -218,7 +217,7 @@ nstars a = take a [x | x &lt;- [1..], odd x]
 
 -- convert tuple containing number of spaces and number of stars to a string
 stringifytreerow :: (Int, Int) -&gt; [Char]
-stringifytreerow (nspaces, nstars) = (take nspaces $ repeat ' ') ++ (take nstars $ repeat '*')
+stringifytreerow (nspaces, nstars) = (take nspaces $ repeat &#39; &#39;) ++ (take nstars $ repeat &#39;*&#39;)
 
 
 main = do
@@ -232,7 +231,7 @@ main = do
     let treestrings = map stringifytreerow treemodel
 
     -- align the trunk of the tree with the top (head) of the tree
-    let trunkstring = (take (head $ nspaces height) $ repeat ' ') ++ &quot;|&quot;
+    let trunkstring = (take (head $ nspaces height) $ repeat &#39; &#39;) ++ &quot;|&quot;
 
     -- display the tree
     mapM_ putStrLn $ treestrings
